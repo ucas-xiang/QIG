@@ -1,5 +1,9 @@
 # [CVPR 2026] Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients
 
+This repository is the official implementation of the paper:
+**Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients**  
+[arXiv](https://arxiv.org/pdf/2603.17809)
+
 ## Installation
 
 1. Create a conda env
