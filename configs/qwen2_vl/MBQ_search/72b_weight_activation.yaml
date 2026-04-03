@@ -1,0 +1,26 @@
+# model args
+model: qwen2_vl
+model_args: pretrained="Qwen/Qwen2-VL-72B-Instruct",device_map=auto
+
+# calibration data args
+calib_data: coco
+n_samples: 128
+data_path: "your/coco/caption/path"
+image_folder: "your/coco/image/folder"
+few_shot_format: False # if True, concat two samples to simulate few shot
+interleave_format: False # if True, insert pure text data between two image-text pairs to simulate interleave data
+text_data_path: "" # You should specify this arg if you want to use interleave_format 
+
+# quantization config
+method: mbq
+run_process: True
+w_bit: 4
+a_bit: 8
+distort: False # if True, use distort feature map during scale search process
+reweight: True # if True, use avg gradient to reweight the loss of each modality
+loss_mode: mae 
+
+# output args
+scale_path: scale_cache/mbq/qwen2_vl_72b_w4a8.pt
+
+

@@ -1,0 +1,7 @@
+[
+    {
+        "id": "00001",
+        "image": "/data/home/scwb054/run/VLM/open/MBQ/inference/data/00003.jpg",
+        "question": "Describe the image in detail.\n<image>"
+    }
+]

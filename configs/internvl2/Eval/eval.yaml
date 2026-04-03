@@ -1,0 +1,21 @@
+# model args
+model: internvl2
+model_args: pretrained="OpenGVLab/InternVL2-8B"
+
+# task args
+tasks: mmmu_val
+batch_size: 1
+log_samples: True
+log_samples_suffix: mmmu_val
+
+# quantization config
+method: mbq
+run_process: False # You don't need to run scale search, load the scale directly
+pseudo_quant: True # if True, conduct pseudo quantization on the model, otherwise the model will stay in fp16
+scale_path: scale_cache/mbq/internvl2_8b_w3g128.pt
+w_bit: 3
+w_group: 128
+
+# output args
+output_path: /your/output/log/path
+
