@@ -2,17 +2,12 @@
 
 ## Installation
 
-1. Clone this repo
+1. Create a conda env
     ```bash
-    git clone --recurse-submodules ××
+    conda create -n qig python=3.11
     ```
 
-2. Create a conda env
-    ```bash
-    conda create -n vlm python=3.11
-    ```
-
-3. Install packages and 3rdparty repos.
+2. Install packages and 3rdparty repos.
     ```bash
     # Install LLaVA-NeXT
     cd 3rdparty/LLaVA-NeXT
@@ -22,12 +17,12 @@
     cd 3rdparty/lmms-eval
     pip install -e .
 
-    # Install qmllm
+    # Install qig
     pip install -r requirements.txt
     pip install -e .
     ```
 
-## Apply model quantization in `qmllm` package
+## Apply model quantization in `qig` package
 ### Command-line Interface 
 
 Quantization search for MLLMs is executed based on `main_quant.py`. A variety of arguments are available to configure the quantization search process.
@@ -38,6 +33,7 @@ Quantization search for MLLMs is executed based on `main_quant.py`. A variety of
     * `--model_args` : Control parameters passed to the model constructor. Accepts a string containing model path", for example `--model_args pretrained=OpenGVLab/InternVL2-8B`.
 
 2. Calibration arguments
+    QIG is sensitive to the calibration data distribution. For best quantization performance, the calibration set should be aligned with the target evaluation setting in both data type and formatting.
     * `--calib_data` : Select which calibration data type is used during quantization search. 
         - only support `pileval` and `coco` now.
     * `--n_samples` : The number of the samples used in quantization search.
@@ -177,3 +173,10 @@ This project is based on [MBQ](https://github.com/thu-nics/MBQ/tree/main). We th
 
 - [MBQ](https://github.com/thu-nics/MBQ/tree/main)
 - [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ.git)
+
+## Contact Us
+If you have any questions, feel free to contact us:
+
+- **Ziwei Xiang**: xiangziwei2022@ia.ac.cn
+- **Fanhu Zeng**: zengfanhu2022@ia.ac.cn
+- **Renxing Chen**: chenrenxing2024@ia.ac.cn
