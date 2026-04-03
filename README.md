@@ -180,3 +180,11 @@ If you have any questions, feel free to contact us:
 - **Ziwei Xiang**: xiangziwei2022@ia.ac.cn
 - **Fanhu Zeng**: zengfanhu2022@ia.ac.cn
 - **Renxing Chen**: chenrenxing2024@ia.ac.cn
+
+## Citation
+@article{xiang2026fine,
+  title={Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients},
+  author={Xiang, Ziwei and Zeng, Fanhu and Fang, Hongjian and Wang, Rui-Qi and Chen, Renxing and Zhu, Yanan and Chen, Yi and Yang, Peipei and Zhang, Xu-Yao},
+  journal={arXiv preprint arXiv:2603.17809},
+  year={2026}
+}
