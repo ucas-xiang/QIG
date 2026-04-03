@@ -33,6 +33,7 @@ Quantization search for MLLMs is executed based on `main_quant.py`. A variety of
     * `--model_args` : Control parameters passed to the model constructor. Accepts a string containing model path", for example `--model_args pretrained=OpenGVLab/InternVL2-8B`.
 
 2. Calibration arguments
+   
     QIG is sensitive to the calibration data distribution. For best quantization performance, the calibration set should be aligned with the target evaluation setting in both data type and formatting.
     * `--calib_data` : Select which calibration data type is used during quantization search. 
         - only support `pileval` and `coco` now.
@@ -47,7 +48,7 @@ Quantization search for MLLMs is executed based on `main_quant.py`. A variety of
         - this option is valid only when `--calib_data=coco`.
     * `--text_data_path` : Accept a string of the pure text dataset path, this dataset will be used in interleave_format, we use `mit-han-lab/pile-val-backup`.
 
-3. Quantization arguments
+4. Quantization arguments
     * `--method` : Select the quantization search type, support `mbq` , `awq` , `smoothquant` , `rtn` , `qig`.
     * `--run_process` : Specify this parameter to run the quantization search.
     * `--w_bit`: Specify the weight bit.
