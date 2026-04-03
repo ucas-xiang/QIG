@@ -13,8 +13,9 @@ This repository is the official implementation of:
 Our approach enables better alignment with calibration data
 
 ## :newspaper: News
+
 - **[2026.04.03]** We release the official code and evaluation pipeline.
-- **[2026.03.17]** Our paper is available on arXiv: [QIG](https://arxiv.org/abs/2603.17809)
+- **[2026.03.17]** Our paper is available on arXiv.
 
 ## Installation
 
