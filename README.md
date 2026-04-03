@@ -182,9 +182,12 @@ If you have any questions, feel free to contact us:
 - **Renxing Chen**: chenrenxing2024@ia.ac.cn
 
 ## Citation
+
+```bibtex
 @article{xiang2026fine,
   title={Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients},
   author={Xiang, Ziwei and Zeng, Fanhu and Fang, Hongjian and Wang, Rui-Qi and Chen, Renxing and Zhu, Yanan and Chen, Yi and Yang, Peipei and Zhang, Xu-Yao},
   journal={arXiv preprint arXiv:2603.17809},
   year={2026}
 }
+```
