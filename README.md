@@ -9,6 +9,13 @@ This repository is the official implementation of:
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.17809-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2603.17809)
 
+**TL;DR: We introduce a fine-grained post-training quantization method for large vision-language models (VLMs), which leverages quantization-aware integrated gradients (QIG) to estimate parameter importance and guide quantization.
+Our approach enables better alignment with calibration data
+
+## :newspaper: News
+- **[2026.04.03]** We release the official code and evaluation pipeline.
+- **[2026.03.17]** Our paper is available on arXiv: [QIG](https://arxiv.org/abs/2603.17809)
+
 ## Installation
 
 1. Create a conda env
