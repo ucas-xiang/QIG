@@ -22,12 +22,14 @@ Our approach enables better alignment with calibration data
 While large vision-language models (LVLMs) achieve strong multimodal reasoning capabilities, their practical deployment remains challenging due to high computational and memory demands.
 
 Post-training quantization (PTQ) offers an efficient solution without retraining. However, existing methods suffer from a fundamental limitation:  
-they estimate sensitivity at the **modality level**, failing to capture the intricate interactions between tokens across modalities. :contentReference[oaicite:1]{index=1}
+they estimate sensitivity at the **modality level**, failing to capture the intricate interactions between tokens across modalities.
 
 In LVLMs, tokens interact dynamically, and the distinction between modalities gradually diminishes during inference.  
-As a result, quantization errors are inherently **fine-grained and token-dependent**, which cannot be properly modeled by coarse-grained strategies. :contentReference[oaicite:2]{index=2}
+As a result, quantization errors are inherently **fine-grained and token-dependent**, which cannot be properly modeled by coarse-grained strategies.
 
-We therefore ask: Can we design a principled method to measure token-level sensitivity for quantization?
+We therefore ask:
+
+> ❓ Can we design a principled method to measure token-level sensitivity for quantization?
 
 To this end, we introduce **Quantization-Aware Integrated Gradients (QIG)**,  
 which extends attribution techniques to the quantization setting, enabling **fine-grained sensitivity estimation and improved robustness under low-bit quantization**.
