@@ -1,21 +1,22 @@
 # [CVPR 2026] Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients
 
-This repository is the official implementation of:
+This repository is the official implementation of CVPR 2026:
 
 **[Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients](https://arxiv.org/abs/2603.17809)**  
 
-> Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients  
-> Ziwei Xiang, Fanhu Zeng, Hongjian Fang, Rui-Qi Wang, Renxing Chen, Yanan Zhu, Yi Chen, Peipei Yang, Xu-Yao Zhang
+> Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients
+> 
+> Ziwei Xiang*, Fanhu Zeng*, Hongjian Fang*, Rui-Qi Wang, Renxing Chen, Yanan Zhu, Yi Chen, Peipei Yang, Xu-Yao Zhang
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.17809-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2603.17809)
 
-**TL;DR: We introduce a fine-grained post-training quantization method for large vision-language models (VLMs), which leverages quantization-aware integrated gradients (QIG) to estimate parameter importance and guide quantization.
-Our approach enables better alignment with calibration data
+**TL;DR: We introduce a fine-grained post-training quantization method for large vision-language models (LVLMs), which leverages quantization-aware integrated gradients (QIG) to estimate parameter importance and guide quantization.**
 
 ## News
 
 - **[2026.04.03]** We release the official code and evaluation pipeline.
-- **[2026.03.17]** Our paper is available on arXiv.
+- **[2026.03.17]** Our paper is available on [arXiv](https://arxiv.org/abs/2603.17809).
+- **[2026.02.21]** Our paper is accepted by **CVPR 2026 main conference**!
 
 ## Motivation
 
