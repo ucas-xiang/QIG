@@ -22,18 +22,15 @@ This repository is the official implementation of CVPR 2026:
 
 While large vision-language models (LVLMs) achieve strong multimodal reasoning capabilities, their practical deployment remains challenging due to high computational and memory demands.
 
-Post-training quantization (PTQ) offers an efficient solution without retraining. However, existing methods suffer from a fundamental limitation:  
-they estimate sensitivity at the **modality level**, failing to capture the intricate interactions between tokens across modalities.
+Post-training quantization (PTQ) offers an efficient solution without retraining. However, existing methods suffer from a fundamental limitation:  they estimate sensitivity at the **modality level**, failing to capture the intricate interactions between tokens across modalities.
 
-In LVLMs, tokens interact dynamically, and the distinction between modalities gradually diminishes during inference.  
-As a result, quantization errors are inherently **fine-grained and token-dependent**, which cannot be properly modeled by coarse-grained strategies.
+In LVLMs, tokens interact dynamically, and the distinction between modalities gradually diminishes during inference. As a result, quantization errors are inherently **fine-grained and token-dependent**, which cannot be properly modeled by coarse-grained strategies.
 
 We therefore ask:
 
 > ❓ Can we design a principled method to measure token-level sensitivity for quantization?
 
-To this end, we introduce **Quantization-Aware Integrated Gradients (QIG)**,  
-which extends attribution techniques to the quantization setting, enabling **fine-grained sensitivity estimation and improved robustness under low-bit quantization**.
+To this end, we introduce **Quantization-Aware Integrated Gradients (QIG)**, which extends attribution techniques to the quantization setting, enabling **fine-grained sensitivity estimation and improved robustness under low-bit quantization**.
 
 ## Installation
 
@@ -198,9 +195,10 @@ Quantization search for MLLMs is executed based on `main_quant.py`. A variety of
         --save_path   "inference/output/llava_onevision_w4a8_preds.json" \
         --max_new_tokens 1024
     ```
+The visualization example is shown below:
 
 <p align="middle">
-  <img src="figures/inference.jpg" width="90%" />
+  <img src="figures/inference.jpg" width="50%" />
 </p>
 
 ## Acknowledgement
@@ -220,10 +218,11 @@ If you have any questions, feel free to contact us:
 ## Citation
 
 ```bibtex
-@article{xiang2026fine,
+@inproceedings{xiang2026fine,
   title={Fine-Grained Post-Training Quantization for Large Vision Language Models with Quantization-Aware Integrated Gradients},
   author={Xiang, Ziwei and Zeng, Fanhu and Fang, Hongjian and Wang, Rui-Qi and Chen, Renxing and Zhu, Yanan and Chen, Yi and Yang, Peipei and Zhang, Xu-Yao},
-  journal={arXiv preprint arXiv:2603.17809},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3500--3510},
   year={2026}
 }
 ```
